@@ -7,13 +7,9 @@ public class Main {
         FileOutputStream output = null;
 
         try {
-            input = new FileInputStream("C:\\Users\\askar\\Documents\\Coding\\IJ_Projects\\Samsung\\Classwork\\src\\input.txt");
-            output = new FileOutputStream("C:\\Users\\askar\\Documents\\Coding\\IJ_Projects\\Samsung\\Classwork\\src\\output.txt");
-
-            int c;
-            while((c = input.read()) != -1) {
-                output.write(c);
-            }
+            PrintWriter writer = new PrintWriter(new FileWriter("C:\\Users\\askar\\Documents\\Coding\\IJ_Projects\\Samsung\\Classwork\\src\\output.txt"));
+            writer.println("Hello!");
+            writer.close();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
