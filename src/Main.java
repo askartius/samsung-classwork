@@ -1,23 +1,15 @@
 import domain.Parcel;
+import service.Example;
 
 public class Main {
     public static void main(String[] args) {
-        class Test {
-            private int a;
-            private int b;
-
-            public Test(int a, int b) {
-                this.a = a;
-                this.b = b;
-            }
-
-            public int sum() {
+        int sum = new Example() {
+            @Override
+            public int sum(int a, int b) {
                 return a + b;
             }
-        }
+        }.sum(8, 13);
 
-        Test test = new Test(2, 4);
-        System.out.println(test.sum());
-
+        System.out.println(sum);
     }
 }
