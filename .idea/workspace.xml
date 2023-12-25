@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="230f94d5-0a07-41c1-9b0b-20bd9768d82f" name="Changes" comment="Scanner">
-      <change afterPath="$PROJECT_DIR$/src/domain/Parcel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="230f94d5-0a07-41c1-9b0b-20bd9768d82f" name="Changes" comment="Inner class" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,7 +86,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703354788300</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Inner class">
+      <option name="closed" value="true" />
+      <created>1703534694608</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703534694608</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -101,6 +102,7 @@
     <MESSAGE value="File input/output stream" />
     <MESSAGE value="PrintWriter" />
     <MESSAGE value="Scanner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scanner" />
+    <MESSAGE value="Inner class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Inner class" />
   </component>
 </project>
