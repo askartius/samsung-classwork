@@ -1,5 +1,7 @@
 package domain;
 
+import java.util.Objects;
+
 public class Person implements Comparable<Person> {
     long id;
     String name;
@@ -36,5 +38,18 @@ public class Person implements Comparable<Person> {
     public int compareTo(Person o) {
         System.out.println("Comparing...");
         return o.getAge() - this.getAge();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return id == person.id && age == person.age && Objects.equals(name, person.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age);
     }
 }
