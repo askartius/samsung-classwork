@@ -1,20 +1,15 @@
-import domain.Person;
-
-import java.util.Comparator;
-import java.util.Set;
-import java.util.TreeSet;
-
 public class Main {
     public static void main(String[] args) {
-        Set<Person> treeSet = new TreeSet<>(new Comparator<Person>() {
-            @Override
-            public int compare(Person o1, Person o2) {
-                return o1.getAge() - o2.getAge();
-            }
-        });
-        treeSet.add(new Person(1L, "Valera", 16));
-        treeSet.add(new Person(1L, "Vitya", 15));
+        MyBinaryTree tree = new MyBinaryTree(10);
+        tree.insertNode(tree, 25);
+        tree.insertNode(tree, 20);
+        tree.insertNode(tree, 6);
+        tree.insertNode(tree, 4);
+        tree.insertNode(tree, 8);
+        tree.insertNode(tree, 50);
+        tree.insertNode(tree, 30);
+        tree.insertNode(tree, 6);
 
-        System.out.println(treeSet);
+        tree.printVerticalTree(tree, 0);
     }
 }
