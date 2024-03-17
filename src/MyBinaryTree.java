@@ -46,16 +46,17 @@ public class MyBinaryTree {
     }
 
     private void buildTreeArray(MyBinaryTree node, int level, ArrayList<ArrayList<String>> treeArray) {
+        // Add a row for values if it doesn't exist
         if (level == treeArray.size()) {
             treeArray.add(new ArrayList<String>());
         }
 
         if (node != null) {
-            treeArray.get(level).add(Integer.toString(node.value));
+            treeArray.get(level).add(Integer.toString(node.value)); // Put the value of the node into its row/level
             buildTreeArray(node.leftChild, level + 1, treeArray);
             buildTreeArray(node.rightChild, level + 1, treeArray);
         } else {
-            treeArray.get(level).add(" ");
+            treeArray.get(level).add(" "); // Put a filler into the row if the node doesn't exist
         }
     }
 
@@ -64,12 +65,14 @@ public class MyBinaryTree {
         buildTreeArray(node, level, treeArray);
 
         for (ArrayList<String> row : treeArray) {
+            // Put more spaces before the first node the lower its row/level is
             for (int i = 0; i < Math.pow(2, treeArray.size() - treeArray.indexOf(row)) - 1; i++) {
                 System.out.print(" ");
             }
 
             for (String value : row) {
                 System.out.print(value);
+                // Put more spaces between nodes the lower their row/level is
                 for (int i = 0; i < Math.pow(2, treeArray.size() - treeArray.indexOf(row) + 1) - 1; i++) {
                     System.out.print(" ");
                 }
